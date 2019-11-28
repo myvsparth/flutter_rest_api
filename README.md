@@ -18,7 +18,7 @@
 1. First and basic step to create new application in flutter. If you are a beginner in flutter then you can check my blog Create a first app in Flutter. I have created app named as “flutter_rest_api”
 
 2. Open the pubspec.yaml file in your project and add the following dependencies into it.
-```
+```yaml
 dependencies:
  flutter:
    sdk: flutter
@@ -27,7 +27,7 @@ dependencies:
 ```
 
 3. Create new file named as “rest_api.dart” for configure rest api url and functions for send and receive data. Following is the programming implementation for rest api in app.
-```
+```dart
 import 'dart:convert';
  
 import 'package:http/http.dart' as http;
@@ -72,7 +72,7 @@ class ApiService {
 
 4. Now, we will consume rest api methods in our app. We have created a widget to display all the employee list. Open main.dart and implement following code.
 
-```
+```dart
 import 'package:flutter/material.dart';
 import 'package:flutter_rest_api/rest_api.dart';
  
@@ -148,7 +148,7 @@ class _EmployeePageState extends State<EmployeePage> {
 5. To add new employee we have created another page called AddNewEmployeePage
 Which will add new employee in the list. Following is the implementation for that I have created widget in main.dart file.
 
-```
+```dart
 class AddNewEmployeePage extends StatefulWidget {
  AddNewEmployeePage({Key key}) : super(key: key);
  
